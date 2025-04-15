@@ -4,25 +4,25 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: "Premier Plâtrerie a transformé notre salon avec un travail impeccable de cloisons sèches. L'attention aux détails et la finition lisse ont dépassé nos attentes. Hautement recommandé !",
+      quote: "BS Plâtrerie a transformé notre salon avec un travail impeccable de cloisons sèches. L'attention aux détails et la finition lisse ont dépassé nos attentes. Hautement recommandé !",
       author: "Sarah Johnson",
       location: "Propriétaire",
       rating: 5
     },
     {
-      quote: "En tant qu'entrepreneur, j'ai travaillé avec de nombreux spécialistes des cloisons sèches, mais Premier Plâtrerie se distingue par son professionnalisme, sa qualité et sa fiabilité. Ils sont devenus notre équipe de référence pour tous les projets.",
+      quote: "En tant qu'entrepreneur, j'ai travaillé avec de nombreux spécialistes des cloisons sèches, mais BS Plâtrerie se distingue par son professionnalisme, sa qualité et sa fiabilité. Ils sont devenus notre équipe de référence pour tous les projets.",
       author: "Michael Rodriguez",
       location: "Entrepreneur Général",
       rating: 5
     },
     {
-      quote: "Après que des dégâts d'eau aient ruiné les murs de notre cuisine, Premier Plâtrerie est venu à la rescousse. Leur travail de réparation était impeccable - on ne peut même pas dire où était le dommage. Service rapide, efficace et amical.",
+      quote: "Après que des dégâts d'eau aient ruiné les murs de notre cuisine, BS Plâtrerie est venu à la rescousse. Leur travail de réparation était impeccable - on ne peut même pas dire où était le dommage. Service rapide, efficace et amical.",
       author: "Jennifer Williams",
       location: "Propriétaire",
       rating: 5
     },
     {
-      quote: "L'équipe de Premier Plâtrerie a géré la rénovation de notre bureau avec un minimum de perturbation pour notre entreprise. La qualité du travail était exceptionnelle et terminée avant l'échéance.",
+      quote: "L'équipe de BS Plâtrerie a géré la rénovation de notre bureau avec un minimum de perturbation pour notre entreprise. La qualité du travail était exceptionnelle et terminée avant l'échéance.",
       author: "David Thompson",
       location: "Propriétaire d'Entreprise",
       rating: 4

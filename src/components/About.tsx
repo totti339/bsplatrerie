@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <div>
           <h2 className="section-title">À Propos de Nous</h2>
           <p className="text-lg mb-6">
-            Avec plus de 15 ans d'expérience dans l'industrie des cloisons sèches, Premier Plâtrerie a établi une réputation d'excellence dans les projets résidentiels et commerciaux. Notre équipe de professionnels qualifiés est dédiée à fournir des résultats impeccables qui dépassent les attentes de nos clients.
+            Avec plus de 15 ans d'expérience dans l'industrie des cloisons sèches, BS Plâtrerie a établi une réputation d'excellence dans les projets résidentiels et commerciaux. Notre équipe de professionnels qualifiés est dédiée à fournir des résultats impeccables dépassant les attentes de nos clients.
           </p>
           <p className="text-lg mb-6">
             Nous sommes fiers de notre savoir-faire et de notre attention aux détails, garantissant que chaque projet est réalisé selon les normes les plus élevées. Notre engagement envers la qualité, la fiabilité et la satisfaction du client a fait de nous le choix privilégié pour les services de plâtrerie dans la région.
@@ -24,7 +24,7 @@ const About: React.FC = () => {
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-custom">
               <Clock className="h-10 w-10 text-navy-700 mb-2" />
               <h3 className="font-bold text-lg mb-1">Ponctualité</h3>
-              <p className="text-gray-600">Projets terminés dans les délais</p>
+              <p className="text-gray-600">Respect des délais</p>
             </div>
             
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-custom">

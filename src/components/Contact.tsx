@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
               <Phone className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
                 <h4 className="font-bold">Téléphone</h4>
-                <p className="text-gray-700">(555) 123-4567</p>
+                <p className="text-gray-700">06.35.46.22.89</p>
               </div>
             </div>
             
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
               <Mail className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
                 <h4 className="font-bold">Email</h4>
-                <p className="text-gray-700">info@premierplatrerie.com</p>
+                <p className="text-gray-700">bsplatrerie@gmail.com</p>
               </div>
             </div>
             
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
               <MapPin className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
                 <h4 className="font-bold">Adresse</h4>
-                <p className="text-gray-700">123 Avenue Construction, Suite 101<br />Villeexemple, France 12345</p>
+                <p className="text-gray-700"><br />68280 Sundhoffen</p>
               </div>
             </div>
             
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
           <div className="mt-8">
             <h3 className="text-2xl font-bold mb-4">Zone de Service</h3>
             <p className="text-gray-700 mb-4">
-              Nous servons fièrement des clients résidentiels et commerciaux dans toute la région métropolitaine et les banlieues environnantes.
+              Nous servons fièrement des clients résidentiels et commerciaux dans toute la région.
             </p>
             
             {/* Map placeholder - in a real implementation, you would use Google Maps or another map service */}

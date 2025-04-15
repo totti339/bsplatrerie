@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
               <Hammer className="h-8 w-8 text-white" />
-              <span className="ml-2 text-xl font-bold">Premier Plâtrerie</span>
+              <span className="ml-2 text-xl font-bold">BS Plâtrerie</span>
             </div>
             <p className="text-gray-300 mb-4">
               Services professionnels de plâtrerie pour projets résidentiels et commerciaux. Qualité du travail et satisfaction client garanties.
@@ -48,8 +48,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de Cloisons Sèches</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Réparation de Cloisons Sèches</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Finition de Cloisons Sèches</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Enduit et finition de Cloisons Sèches</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Travail de Texture</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de Plafonds</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Services d'Ossature</a></li>
@@ -59,17 +58,16 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Informations de Contact</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>123 Avenue Construction, Suite 101</p>
-              <p>Villeexemple, France 12345</p>
-              <p>Téléphone: (555) 123-4567</p>
-              <p>Email: info@premierplatrerie.com</p>
+              <p>68280 Sundhoffen</p>
+              <p>Téléphone: 06.35.46.22.89</p>
+              <p>Email: bsplatrerie@gmail.com</p>
               <p>Heures: Lun-Ven 8h-17h, Sam 9h-14h</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300">© {currentYear} Premier Plâtrerie. Tous droits réservés.</p>
+          <p className="text-gray-300">© {currentYear} BS Plâtrerie. Tous droits réservés.</p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Politique de Confidentialité</a></li>

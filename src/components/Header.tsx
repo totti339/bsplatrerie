@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Hammer className="h-8 w-8 text-navy-700" />
-            <span className="ml-2 text-xl font-bold text-navy-700">Premier Plâtrerie</span>
+            <span className="ml-2 text-xl font-bold text-navy-700">BS Plâtrerie</span>
           </div>
           
           {/* Desktop Navigation */}
