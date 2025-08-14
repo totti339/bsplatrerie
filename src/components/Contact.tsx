@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     phone: '',
     message: ''
   });
-  
+
   const [formStatus, setFormStatus] = useState<{
     submitted: boolean;
     success: boolean;
@@ -25,14 +25,14 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate form submission
     setFormStatus({
       submitted: true,
       success: true,
       message: 'Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.'
     });
-    
+
     // Reset form after submission
     setFormData({
       name: '',
@@ -40,8 +40,9 @@ const Contact: React.FC = () => {
       phone: '',
       message: ''
     });
-    
-    // In a real application, you would send the form data to a server here
+
+    // send form data by mail 
+
   };
 
   return (
@@ -52,11 +53,11 @@ const Contact: React.FC = () => {
           Prêt à commencer votre projet ? Contactez-nous dès aujourd'hui pour une consultation et un devis gratuits.
         </p>
       </div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <h3 className="text-2xl font-bold mb-6">Informations de Contact</h3>
-          
+
           <div className="space-y-6">
             <div className="flex items-start">
               <Phone className="h-6 w-6 text-navy-700 mt-1 mr-4" />
@@ -65,7 +66,7 @@ const Contact: React.FC = () => {
                 <p className="text-gray-700">06.35.46.22.89</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <Mail className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
@@ -73,7 +74,7 @@ const Contact: React.FC = () => {
                 <p className="text-gray-700">bsplatrerie@gmail.com</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <MapPin className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
@@ -81,7 +82,7 @@ const Contact: React.FC = () => {
                 <p className="text-gray-700"><br />68280 Sundhoffen</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <Clock className="h-6 w-6 text-navy-700 mt-1 mr-4" />
               <div>
@@ -90,23 +91,18 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-8">
             <h3 className="text-2xl font-bold mb-4">Zone de Service</h3>
             <p className="text-gray-700 mb-4">
               Nous servons fièrement des clients résidentiels et commerciaux dans toute la région.
             </p>
-            
-            {/* Map placeholder - in a real implementation, you would use Google Maps or another map service */}
-            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-gray-600">La carte serait intégrée ici</p>
-            </div>
           </div>
         </div>
-        
+
         <div>
           <h3 className="text-2xl font-bold mb-6">Envoyez-Nous un Message</h3>
-          
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Nom</label>
@@ -121,7 +117,7 @@ const Contact: React.FC = () => {
                 placeholder="Votre Nom"
               />
             </div>
-            
+
             <div>
               <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
               <input
@@ -135,7 +131,7 @@ const Contact: React.FC = () => {
                 placeholder="Votre Email"
               />
             </div>
-            
+
             <div>
               <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Numéro de Téléphone</label>
               <input
@@ -149,7 +145,7 @@ const Contact: React.FC = () => {
                 placeholder="Votre Numéro de Téléphone"
               />
             </div>
-            
+
             <div>
               <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
               <textarea
@@ -163,7 +159,7 @@ const Contact: React.FC = () => {
                 placeholder="Parlez-nous de votre projet..."
               ></textarea>
             </div>
-            
+
             <button
               type="submit"
               className="btn-primary w-full flex items-center justify-center"
@@ -172,7 +168,7 @@ const Contact: React.FC = () => {
               Envoyer le Message
             </button>
           </form>
-          
+
           {formStatus && (
             <div className={`mt-6 p-4 rounded-md ${formStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
               {formStatus.message}

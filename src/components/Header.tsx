@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu, X, Hammer } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../img/2108-BS PLATRERIE-LOGO.png';
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -30,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Hammer className="h-8 w-8 text-navy-700" />
+            <img src={logo} alt="BS Plâtrerie Logo" className="h-12 w-auto" />
             <span className="ml-2 text-xl font-bold text-navy-700">BS Plâtrerie</span>
           </div>
           

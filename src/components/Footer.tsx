@@ -1,16 +1,17 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter, Linkedin, Hammer } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
+import logo from '../img/2108-BS PLATRERIE-LOGO.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-navy-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Hammer className="h-8 w-8 text-white" />
+              <img src={logo} alt="BS Plâtrerie Logo" className="h-12 w-auto" />
               <span className="ml-2 text-xl font-bold">BS Plâtrerie</span>
             </div>
             <p className="text-gray-300 mb-4">
@@ -23,15 +24,9 @@ const Footer: React.FC = () => {
               <a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
@@ -43,18 +38,18 @@ const Footer: React.FC = () => {
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de Cloisons Sèches</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Enduit et finition de Cloisons Sèches</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Travail de Texture</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de Plafonds</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Services d'Ossature</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Isolation</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de Plafonds suspendus</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Installation de plafonds démontables</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4">Informations de Contact</h3>
             <address className="not-italic text-gray-300 space-y-2">
@@ -65,16 +60,9 @@ const Footer: React.FC = () => {
             </address>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300">© {currentYear} BS Plâtrerie. Tous droits réservés.</p>
-          <div className="mt-4 md:mt-0">
-            <ul className="flex space-x-6">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Politique de Confidentialité</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Conditions d'Utilisation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Plan du Site</a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </footer>

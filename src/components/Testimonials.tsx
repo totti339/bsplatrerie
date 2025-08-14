@@ -4,9 +4,9 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      quote: "BS Plâtrerie a transformé notre salon avec un travail impeccable de cloisons sèches. L'attention aux détails et la finition lisse ont dépassé nos attentes. Hautement recommandé !",
-      author: "Sarah Johnson",
-      location: "Propriétaire",
+      quote: "Sezgin et son équipe ont réalisé la pose de tout les plafond suspendus de ma maison, leur enduit ainsi qu'un ratissage complet de tout les murs. L'attention aux détails et la finition ont été fortement apprécié.",
+      author: "Thomas De Giacinto",
+      location: "Sundhoffen",
       rating: 5
     },
     {
@@ -31,9 +31,9 @@ const Testimonials: React.FC = () => {
 
   const renderStars = (rating: number) => {
     return Array(5).fill(0).map((_, i) => (
-      <Star 
-        key={i} 
-        className={`h-5 w-5 ${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`} 
+      <Star
+        key={i}
+        className={`h-5 w-5 ${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`}
       />
     ));
   };
@@ -46,11 +46,11 @@ const Testimonials: React.FC = () => {
           Ne vous fiez pas seulement à notre parole. Voici ce que nos clients satisfaits disent de nos services de plâtrerie.
         </p>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {testimonials.map((testimonial, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="bg-white p-6 rounded-lg shadow-custom relative"
           >
             <Quote className="absolute top-4 right-4 h-10 w-10 text-gray-200" />
@@ -70,7 +70,7 @@ const Testimonials: React.FC = () => {
           </div>
         ))}
       </div>
-      
+
       <div className="mt-12 text-center">
         <div className="bg-white p-6 rounded-lg shadow-custom max-w-2xl mx-auto">
           <h3 className="text-xl font-bold mb-4">Prêt à expérimenter notre service de qualité ?</h3>
