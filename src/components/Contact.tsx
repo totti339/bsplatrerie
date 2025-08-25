@@ -41,7 +41,8 @@ const Contact: React.FC = () => {
       message: ''
     });
 
-    // send form data by mail 
+    // send form data by mail
+
 
   };
 

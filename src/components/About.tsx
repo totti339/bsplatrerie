@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Clock, ThumbsUp } from 'lucide-react';
+import experience from '../img/experience.jpeg';
 
 const About: React.FC = () => {
   return (
@@ -13,20 +14,20 @@ const About: React.FC = () => {
           <p className="text-lg mb-6">
             Nous sommes fiers de notre savoir-faire et de notre attention aux détails, garantissant que chaque projet est réalisé selon les normes les plus élevées. Notre engagement envers la qualité, la fiabilité et la satisfaction du client a fait de nous le choix privilégié pour les services de plâtrerie dans la région.
           </p>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-custom">
               <Award className="h-10 w-10 text-navy-700 mb-2" />
               <h3 className="font-bold text-lg mb-1">Travail de Qualité</h3>
               <p className="text-gray-600">Matériaux premium et savoir-faire expert</p>
             </div>
-            
+
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-custom">
               <Clock className="h-10 w-10 text-navy-700 mb-2" />
               <h3 className="font-bold text-lg mb-1">Ponctualité</h3>
               <p className="text-gray-600">Respect des délais</p>
             </div>
-            
+
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-custom">
               <ThumbsUp className="h-10 w-10 text-navy-700 mb-2" />
               <h3 className="font-bold text-lg mb-1">Satisfaction</h3>
@@ -34,11 +35,11 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="relative">
-          <img 
-            src="https://images.unsplash.com/photo-1581775231124-4f70b143b85c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-            alt="Plâtrier professionnel travaillant sur une cloison sèche" 
+          <img
+            src={experience}
+            alt="Plâtrier professionnel travaillant sur une cloison sèche"
             className="rounded-lg shadow-lg w-full h-auto object-cover"
           />
           <div className="absolute -bottom-6 -left-6 bg-navy-700 text-white p-4 rounded-lg shadow-lg">

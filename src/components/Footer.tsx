@@ -18,10 +18,7 @@ const Footer: React.FC = () => {
               Services professionnels de plâtrerie pour projets résidentiels et commerciaux. Qualité du travail et satisfaction client garanties.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              <a href="https://www.instagram.com/bs_platrerie68/" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
@@ -56,7 +53,7 @@ const Footer: React.FC = () => {
               <p>68280 Sundhoffen</p>
               <p>Téléphone: 06.35.46.22.89</p>
               <p>Email: bsplatrerie@gmail.com</p>
-              <p>Heures: Lun-Ven 8h-17h, Sam 9h-14h</p>
+              <p>Heures: Lun-Ven 8h-17h</p>
             </address>
           </div>
         </div>
